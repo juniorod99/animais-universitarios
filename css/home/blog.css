@@ -1,0 +1,47 @@
+.blog{
+  padding-top: 46px;
+  padding-bottom: 126px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog h2{
+  font-size: 2.25rem;
+  margin-bottom: 20px;
+}
+
+.blog p{
+  font-size: 1.125rem;
+  margin-bottom: 36px;
+}
+
+.blog-itens{
+  display: flex;
+  align-items: start;
+  gap: 32px;
+}
+
+.blog-itens li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-itens li img{
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.blog-itens li p{
+  flex: 1;
+  width: 100%;
+  font-size: 1rem;
+  margin-bottom: 40px;
+  text-align: center; 
+  max-width: 200px;
+}

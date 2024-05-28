@@ -1,0 +1,30 @@
+.animais-lista{
+  padding-top: 100px;
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animais-lista h2{
+  margin-bottom: 24px;
+  font-size: 2.25rem;
+}
+
+.animais-lista p{
+  margin-bottom: 40px;
+  font-size: 1.125rem;
+}
+
+.animais-lista-itens{
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.animais-lista-itens li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}

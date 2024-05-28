@@ -1,0 +1,22 @@
+.header-bg{
+  background-color: #FFF0D9;
+}
+.header{
+  display: flex;
+  align-items:center ;
+  justify-content: space-between;
+}
+.menu{
+  display: flex;
+  gap: 28px;
+  align-items:center ;
+
+}
+.menu ul{
+  display: flex;
+  gap: 40px;
+}
+.pesquisa{
+  background-color: #ffffff;
+  border-radius: 20px;
+}

@@ -1,0 +1,30 @@
+.produtos{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 64px;
+  padding-top: 64px;
+  padding-bottom: 46px;
+}
+
+.produtos-conteudo h2{
+  font-size: 2.25rem;
+  margin-bottom: 32px;
+}
+
+.produtos-conteudo p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 64px;
+}
+
+.produtos-imagens ul{
+  display: grid;
+  justify-content: end;
+  align-items: flex-end;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.produtos-imagens ul li img{
+  width: 100%;
+}

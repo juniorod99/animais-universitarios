@@ -1,0 +1,71 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111111;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+blockquote,
+dd {
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input{
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  background: url(../../images/search.png) no-repeat;
+  background-position-x: 95%;
+  background-position-y: center;
+}
+
+input[type="email"]{
+  display: block;
+  min-width: 370px;
+  background: #ffffff;
+  padding: 10px 16px;
+}
+
+input::placeholder{
+  color: #c4c4c4;
+}
+
+input[type="email"]::placeholder{
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: #B78888;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+  /* border-radius: 4px; */
+}
+
+/* img[src$=".jpg"] {
+  border-radius: 4px;
+} */
