@@ -1,0 +1,20 @@
+#donation {
+  padding: 112px 0px;
+}
+
+#donation_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.donation_cards .cards .card p {
+  margin-bottom: 56px;
+}
+
+@media screen and (max-width: 600px) {
+  .donation_cards .cards .card p {
+    margin-bottom: 40px;
+  }
+}

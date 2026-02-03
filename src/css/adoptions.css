@@ -1,0 +1,40 @@
+#adoptions {
+  padding: 112px 0px;
+}
+
+#adoptions_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.adoption_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.adoption_cards > .cards > .card {
+  padding: 0;
+  /* flex: 1 1 250px; */
+  overflow: hidden;
+  /* max-width: 432px; */
+}
+
+.card_img {
+  object-fit: cover;
+  width: 100%;
+  height: 432px;
+}
+
+.card_text {
+  padding: 32px;
+}
+
+@media screen and (max-width: 600px) {
+  .card_text {
+    padding: 24px;
+  }
+}

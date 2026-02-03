@@ -1,0 +1,124 @@
+#header_bg {
+  /* width: 100%;
+  padding: 0px 8%; */
+  border-bottom: 2px solid var(--neutral-1);
+}
+
+#navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+#nav_list {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
+
+.nav_item a {
+  text-decoration: none;
+  padding: 14.5px 24px;
+  color: var(--dark-1);
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.nav_item:last-child a {
+  background-color: var(--primary-3);
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  /* transition: border-radius 0.1s ease; */
+}
+
+.nav_item:last-child a:hover {
+  background-color: var(--primary-2);
+}
+
+/* .nav_item:last-child a:active {
+  border-radius: 16px;
+} */
+
+#mobile_btn,
+#mobile_menu {
+  display: none;
+}
+
+#mobile_btn img {
+  width: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  #navbar {
+    padding: 20px 0px;
+  }
+
+  #nav_list {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 82px;
+    right: 0px;
+    background: var(--neutral-2);
+    z-index: 1000;
+    text-align: center;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.6s;
+  }
+
+  #navbar.active #nav_list {
+    display: block;
+    height: calc(100vh - 82px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #nav_list .nav_item {
+    margin: 32px 24px;
+  }
+
+  #nav_list a {
+    margin: 0 1rem;
+    display: block;
+  }
+
+  #mobile_btn {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    gap: 0.5rem;
+  }
+
+  #hamburguer {
+    width: 27px;
+    border-top: 2px solid var(--dark-2);
+  }
+
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 2px;
+    background-color: var(--dark-2);
+    margin-top: 7px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #navbar.active #hamburguer {
+    border-top-color: transparent;
+  }
+
+  #navbar.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+  #navbar.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -9px;
+  }
+}

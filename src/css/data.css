@@ -1,0 +1,53 @@
+#data {
+  padding: 112px 0px;
+}
+#data_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+}
+.data_cards {
+  width: 100%;
+}
+.data_card {
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  flex: 1 1 380px;
+}
+
+.data_number {
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--dark-2);
+}
+
+.paw_1,
+.paw_2 {
+  position: absolute;
+  width: 48px;
+}
+
+.paw_1 {
+  top: 16px;
+  left: 16px;
+}
+
+.paw_2 {
+  bottom: 16px;
+  right: 16px;
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 600px) {
+  .data_number {
+    font-size: 2.5rem;
+  }
+
+  .paw_1,
+  .paw_2 {
+    width: 40px;
+  }
+}
