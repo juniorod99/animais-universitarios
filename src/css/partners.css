@@ -23,12 +23,12 @@
 
 #partners .partners_swiper .swiper-button-prev {
   background: var(--neutral-2) no-repeat center
-    url("/src/images/icons/arrow-left.png");
+    url("../../src/images/icons/arrow-left.png");
 }
 
 #partners .partners_swiper .swiper-button-next {
   background: var(--neutral-2) no-repeat center
-    url("/src/images/icons/arrow-right.png");
+    url("../../src/images/icons/arrow-right.png");
 }
 
 #partners .partners_swiper .swiper-button-next:after,

@@ -9,6 +9,7 @@
 @import url("donation.css");
 @import url("partners.css");
 @import url("team.css");
+@import url("follow.css");
 
 :root {
   --primary-1: #cf440c;

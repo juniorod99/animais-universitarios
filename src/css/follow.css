@@ -1,0 +1,23 @@
+#follow {
+  padding: 112px 0px;
+}
+.follow_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral-3);
+  border: 2px solid var(--neutral-1);
+  border-radius: 16px;
+  padding: 64px 32px;
+}
+
+.follow_content .section_subtitle {
+  margin-bottom: 48px;
+}
+.follow_cta a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
