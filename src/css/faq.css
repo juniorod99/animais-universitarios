@@ -1,0 +1,63 @@
+#faq {
+  padding: 112px 0px;
+}
+.faq_content dl {
+  margin-top: 48px;
+}
+.faq_question {
+  margin-bottom: 16px;
+  padding: 16px 0px;
+}
+
+.faq_question:last-child {
+  margin-bottom: 0px;
+}
+
+.faq_question button {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark-1);
+}
+
+.faq_question dd {
+  max-width: 80ch;
+  margin-top: 0px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--dark-2);
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.faq_question dd.active {
+  max-height: 500px;
+  margin-top: 16px;
+}
+
+.faq_question button::after {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url("../../src/images/icons/chevron-down.svg");
+  transition: 0.3s;
+}
+
+.faq_question button[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 600px) {
+  .faq_question {
+    padding: 8px 0px;
+  }
+}
