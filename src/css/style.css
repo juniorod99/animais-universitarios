@@ -11,6 +11,7 @@
 @import url("team.css");
 @import url("follow.css");
 @import url("faq.css");
+@import url("footer.css");
 
 :root {
   --primary-1: #cf440c;
@@ -100,15 +101,14 @@ button {
 .section_title {
   font-size: 3rem;
   font-weight: 600;
-  color: #2e2e2e;
+  color: var(--dark-1);
   margin-bottom: 16px;
-  text-align: center;
 }
 
 .section_subtitle {
-  margin-bottom: 54px;
+  margin-bottom: 64px;
   max-width: 800px;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   color: var(--dark-2);
   text-align: center;
@@ -120,7 +120,12 @@ button {
     padding-right: 20px;
   }
 
-  .title {
+  .section_title {
     font-size: 2rem;
+  }
+
+  .section_subtitle {
+    margin-bottom: 48px;
+    font-size: 1.125rem;
   }
 }
