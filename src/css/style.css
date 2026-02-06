@@ -12,6 +12,7 @@
 @import url("follow.css");
 @import url("faq.css");
 @import url("footer.css");
+@import url("typography.css");
 
 :root {
   --primary-1: #cf440c;
@@ -66,6 +67,11 @@ button {
   margin-right: auto;
 }
 
+.gap {
+  padding-top: 112px;
+  padding-bottom: 112px;
+}
+
 .btn_default {
   background-color: #ccc;
   padding: 14.5px 24px;
@@ -114,10 +120,19 @@ button {
   text-align: center;
 }
 
+.mb_section_title {
+  margin-bottom: 64px;
+}
+
 @media screen and (max-width: 600px) {
   .container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .gap {
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
 
   .section_title {
@@ -127,5 +142,9 @@ button {
   .section_subtitle {
     margin-bottom: 48px;
     font-size: 1.125rem;
+  }
+
+  .mb_section_title {
+    margin-bottom: 48px;
   }
 }

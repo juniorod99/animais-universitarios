@@ -1,15 +1,8 @@
-#services {
-  padding: 112px 0px;
-}
 .services_content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.services_content h2 {
-  margin-bottom: 64px;
 }
 
 .cards {
@@ -38,15 +31,6 @@
 
 .card h4 {
   margin-bottom: 16px;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--dark-1);
-}
-
-.card p {
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: var(--dark-2);
 }
 
 .services_disclaimer {
@@ -64,25 +48,15 @@
   text-align: center;
 }
 
-.services_disclaimer h4 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--dark-1);
-}
-
 .services_disclaimer p {
   max-width: 800px;
   text-align: center;
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: var(--dark-2);
 }
 
 @media screen and (max-width: 600px) {
-  .services_content h2 {
-    margin-bottom: 48px;
+  .cards {
+    gap: 24px;
   }
-
   .card {
     padding: 24px;
   }
@@ -90,12 +64,5 @@
   .card .card_icon {
     width: 64px;
     margin-bottom: 16px;
-  }
-  .card h4 {
-    font-size: 1.25rem;
-  }
-
-  .card p {
-    font-size: 1.125rem;
   }
 }

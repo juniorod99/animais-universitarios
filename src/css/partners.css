@@ -1,17 +1,22 @@
-#partners {
-  padding: 112px 0px;
-}
-
-#partners_content {
+.partners_content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.partners_content > h2 {
+  margin-bottom: 16px;
+}
+
+.partners_content > p {
+  margin-bottom: 80px;
+}
+
 #partners .partners_swiper {
   width: 100%;
-  padding: 40px 88px;
+  /* padding: 40px 88px; */
+  padding: 0px 88px 40px 88px;
 }
 
 #partners .swiper_button {
@@ -76,4 +81,13 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .partners_content > p {
+    margin-bottom: 56px;
+  }
+  .partners_cta {
+    margin-top: 56px;
+  }
 }

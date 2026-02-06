@@ -1,12 +1,17 @@
-#donation {
-  padding: 112px 0px;
-}
-
-#donation_content {
+.donation_content {
   display: flex;
+  align-items: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.donation_content h2 {
+  margin-bottom: 16px;
+}
+
+.donation_content > p {
+  margin-bottom: 64px;
 }
 
 .donation_cards .cards .card p {

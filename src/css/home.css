@@ -6,8 +6,11 @@
 }
 
 #cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 200px;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
 #cta .subtitle,
@@ -15,29 +18,24 @@
   font-size: 2rem;
   font-weight: 400;
   color: var(--dark-2);
-  padding: 16px 0;
 }
 
 #cta .subtitle {
   opacity: 0.96;
+  margin-bottom: 16px;
 }
 
 #cta .description {
   max-width: 864px;
-  margin: 0 auto;
-}
-
-#cta .cta_title {
-  font-size: 6rem;
-  font-weight: 600;
-  color: var(--dark-1);
+  margin-top: 16px;
 }
 
 #cta_buttons {
   display: flex;
   gap: 24px;
   justify-content: center;
-  margin-top: 48px;
+  margin-top: 64px;
+  width: 100%;
 }
 
 #cta_buttons a {
@@ -53,18 +51,18 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
+  #home {
+    min-height: initial;
+  }
   #cta {
     margin-top: 60px;
+    margin-bottom: 56px;
   }
 
   #cta .subtitle,
   #cta .description {
     font-size: 1.125rem;
-  }
-
-  #cta .cta_title {
-    font-size: 2.75rem;
   }
 
   #cta_buttons {

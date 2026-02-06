@@ -1,5 +1,6 @@
 #follow {
-  padding: 112px 0px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .follow_content {
   display: flex;
@@ -12,7 +13,11 @@
   padding: 64px 32px;
 }
 
-.follow_content .section_subtitle {
+.follow_content > h2 {
+  margin-bottom: 16px;
+}
+
+.follow_content > p {
   margin-bottom: 48px;
 }
 .follow_cta a {
@@ -20,4 +25,15 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  #follow {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .follow_content > p {
+    margin-bottom: 32px;
+  }
 }

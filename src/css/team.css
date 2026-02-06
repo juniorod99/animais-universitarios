@@ -1,11 +1,15 @@
-#team {
-  padding: 112px 0px;
-}
-
 .team_content {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.team_content > h2 {
+  margin-bottom: 16px;
+}
+
+.team_content > p {
+  margin-bottom: 64px;
 }
 
 .team_galery {
@@ -45,5 +49,11 @@
   .team_galery {
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .team_content > p {
+    margin-bottom: 48px;
   }
 }

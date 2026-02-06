@@ -1,12 +1,8 @@
-#data {
-  padding: 112px 0px;
-}
-#data_content {
+.data_content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 64px;
 }
 .data_cards {
   width: 100%;
@@ -22,20 +18,25 @@
   font-size: 3rem;
   font-weight: 400;
   color: var(--dark-2);
+  position: relative;
 }
 
-.paw_1,
-.paw_2 {
+.data_card::before,
+.data_card::after {
+  content: "";
   position: absolute;
   width: 48px;
+  height: 47px;
+  background: url("../../src/images/paw.svg");
+  background-size: contain;
 }
 
-.paw_1 {
+.data_card::before {
   top: 16px;
   left: 16px;
 }
 
-.paw_2 {
+.data_card::after {
   bottom: 16px;
   right: 16px;
   transform: rotate(180deg);
@@ -46,8 +47,9 @@
     font-size: 2.5rem;
   }
 
-  .paw_1,
-  .paw_2 {
-    width: 40px;
+  .data_card::before,
+  .data_card::after {
+    width: 39px;
+    height: 38px;
   }
 }

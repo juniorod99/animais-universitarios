@@ -10,6 +10,14 @@ footer {
   padding-bottom: 232px;
 }
 
+.footer_content h2 {
+  margin-bottom: 16px;
+}
+
+.footer_content p {
+  margin-bottom: 64px;
+}
+
 .footer_socials ul {
   display: flex;
   align-items: center;
@@ -18,13 +26,16 @@ footer {
 }
 
 .footer_socials ul li {
-  display: flex;
-  padding: 16px;
   background-color: var(--primary-3);
   border-radius: 50%;
 }
 
-.footer_socials ul li img {
+.footer_socials ul li a {
+  display: flex;
+  padding: 16px;
+}
+
+.footer_socials ul li a img {
   width: 24px;
   height: 24px;
 }
@@ -33,6 +44,10 @@ footer {
   .footer_content {
     padding-top: 189px;
     padding-bottom: 189px;
+  }
+
+  .footer_content p {
+    margin-bottom: 48px;
   }
   .footer_socials ul {
     gap: 24px;
