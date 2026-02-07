@@ -28,6 +28,11 @@ footer {
 .footer_socials ul li {
   background-color: var(--primary-3);
   border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.footer_socials ul li:hover {
+  background-color: var(--primary-2);
 }
 
 .footer_socials ul li a {

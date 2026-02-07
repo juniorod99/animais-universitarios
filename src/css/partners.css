@@ -10,13 +10,12 @@
 }
 
 .partners_content > p {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 #partners .partners_swiper {
   width: 100%;
-  /* padding: 40px 88px; */
-  padding: 0px 88px 40px 88px;
+  padding: 40px 88px;
 }
 
 #partners .swiper_button {
